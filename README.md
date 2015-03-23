@@ -1,41 +1,57 @@
 # Assignment 4
-# RELEASE ENGINEERING AND CONFIGURATION MANAGEMENT
-# SPRING 2015
-# Autoconf / Autotools Use for Prime Numbers
+RELEASE ENGINEERING AND CONFIGURATION MANAGEMENT
+SPRING 2015
+Autoconf / Autotools Use for Prime Numbers
 
-# * If your not using Docker to run this example
-# * please skip to line 54
+* If your not using Docker to run this example
+* please skip to line 54
 
 How to use (Using Docker)
 -------------------------
 
-# We use docker because it can isolate a test environment
-# on our laptop without without the need to install tools
-# directly on the laptio. Visit http://boot2docker.io/
-# for more information to quickyly and easily get started
+We use docker because it can isolate a test environment
+on our laptop without without the need to install tools
+directly on the laptio. Visit http://boot2docker.io/
+for more information to quickyly and easily get started
 
+```
 boot2docker up
 docker build -t primes .
 docker run -it --rm --name a4 primes /bin/bash
 docker attach a4
+```
 
-# This will generate all needed inforamation to build the package
-# You can cat autogen.sh to see how it works.
+This will generate all needed inforamation to build the package
+You can cat autogen.sh to see how it works.
+
+```
 $ ./autogen.sh
+```
 
-# This will configure the build to install into /usr/bin
+This will configure the build to install into /usr/bin
+
+```
 $./configure --prefix=/usr/
+```
 
-# This will make build the needed object files from src/prime.c and build primes
+This will make build the needed object files from src/prime.c and build primes
+
+```
 $ make
+```
 
-# This will install primes in /usr/
+This will install primes in /usr/
+
+```
 $ make install
+```
 
-# Program is installed
-# run Primes
+Program is installed
+run Primes
 
 (sample output)
+
+```
 $ primes
 Enter the number of prime numbers required
 5
@@ -49,7 +65,7 @@ First 5 prime numbers are :
 $ make clean
 $ make dist
 $ exit
-
+```
 
 How to use (Without Docker)
 ---------------------------
@@ -61,8 +77,11 @@ How to use (Without Docker)
 5. make
 6. make install
 
-# You can then run the program "primes"
+You can then run the program "primes"
+
 (sample output)
+
+```
 $ primes
 Enter the number of prime numbers required
 5
@@ -72,3 +91,4 @@ First 5 prime numbers are :
 5
 7
 11
+```
