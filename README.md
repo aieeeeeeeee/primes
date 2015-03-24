@@ -1,6 +1,9 @@
 # Assignment 4
+
 RELEASE ENGINEERING AND CONFIGURATION MANAGEMENT
+
 SPRING 2015
+
 Autoconf / Autotools Use for Prime Numbers
 
 * If your not using Docker to run this example
