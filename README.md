@@ -1,3 +1,5 @@
+[![Build Status](http://jenkins-bec07d77-1.wallnerryan.cont.tutum.io:49154/buildStatus/icon?job=primes-build)](http://jenkins-bec07d77-1.wallnerryan.cont.tutum.io:49154/job/primes-build/)
+
 # Assignment 4
 
 RELEASE ENGINEERING AND CONFIGURATION MANAGEMENT
