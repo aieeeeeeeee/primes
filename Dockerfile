@@ -17,6 +17,8 @@ COPY autogen.sh /usr/src/prime/
 COPY configure.ac /usr/src/prime/
 COPY Makefile.am /usr/src/prime/
 
+# Make autogen.sh executable
 RUN chmod 755 /usr/src/prime/autogen.sh
 
+# Enter Source Directory
 WORKDIR /usr/src/prime/
